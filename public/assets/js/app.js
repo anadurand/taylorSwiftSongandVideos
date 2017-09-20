@@ -61,7 +61,7 @@ $(_ => {
 
 const SongsList = (updated) => {
 
-    const parent = $('<div class=""></div>');
+    const parent = $('<div class="list-content"></div>');
     const ul = $('<ul class="collection"></ul>');
 
     parent.append(ul);
@@ -78,14 +78,19 @@ const SongsList = (updated) => {
                         }, []);
     console.log(uniqueSongs);
     uniqueSongs.forEach( (song, i) => {
-        ul.append(detailSong(song, i+1));
+        if(i+1<10){
+            i = "0" + (i+1);
+        }else if(i+1==10){
+            i=i+1;
+        }
+        ul.append(detailSong(song, i));
     });
 
     return parent;
 }
 
 const detailSong = (song, i) => {
-    const li = $('<li class="collection-item avatar"><span class= "negrita count">'+ i +'</span></li>');
+    const li = $('<li class="collection-item avatar"><div class= "negrita count">'+ i +'</div></li>');
     const img = $('<img src="'+song.artworkUrl30+'" alt="" class="circle">');
     const title = $('<span class="title trucate negrita">'+song.trackName+'</span>');
     const collection = $('<p class="truncate">'+song.collectionName+'</p>');
@@ -103,35 +108,39 @@ const detailSong = (song, i) => {
 'use strict';
 
 const OtherChart = () => {
-    const otherArray = [{"title": "Global Top 100", "description": "The most Shazamed song ...", "img": ""},
-        { "title": "Future Hits", "description": "New songs you'll love.", "img": "" },
-        {"title": "Hip-Hop", "description": "The hottest rap right now.", "img": "" },
-        {"title": "Pop", "description": "Featuring the biggest stars on ...", "img": "" },
-        {"title": "Dance", "description": "The freshest EDM hits.", "img": "" },
-        {"title": "Country", "description": "The top 10 new anthems.", "img": "" },
-        {"title": "Latin", "description": "The best new Latin grooves.", "img": "" },
-        { "title": "Hall of Fame", "description": "The most Shazamed song ...", "img": "" }];
+    const otherArray = [{"title": "Global Top 100", "description": "The most Shazamed song ...", "img": "top100.png"},
+        { "title": "Future Hits", "description": "New songs you'll love.", "img": "future-hits.jpg" },
+        {"title": "Hip-Hop", "description": "The hottest rap right now.", "img": "hiphop.jpg" },
+        {"title": "Pop", "description": "Featuring the biggest stars on ...", "img": "pop.jpg" },
+        {"title": "Dance", "description": "The freshest EDM hits.", "img": "dance.jpg" },
+        {"title": "Country", "description": "The top 10 new anthems.", "img": "country.jpg" },
+        {"title": "Latin", "description": "The best new Latin grooves.", "img": "latin.jpg" },
+        { "title": "Hall of Fame", "description": "The most Shazamed song ...", "img": "shazam.jpg" }];
 
-    const parent = $('<div class=""><h5>Other Chart</h5></div>');
-    const div = $('<div class="row"></div>');
+    const parent = $('<div class="row"><h5>Other Chart</h5></div>');
+    const div = $('<div class="col s12"></div>');
     parent.append(div);
 
     otherArray.forEach((obj)=> {
         div.append(DetailChart(obj));
     });
-    console.log(parent);
     return parent
 }
 
 const DetailChart = (obj) => {
-    const parent = $('<div class="col s6"></div>');
-    const container = $('<div></div>');
-    const divImg = $('<div class="img-div"><img src="'+obj.img+'" alt=""></div>');
-    const divDesc = $('<div class="div-desc"><p class="chart-title>'+obj.title+'<br>'+obj.description+'</p></div>');
+    const parent = $('<div class="col s12 l6"></div>');
+    const container = $('<div class = "detail-chart"></div>');
+    const divImg = $('<div class="img-div"></div>');
+    const divImgDetail = $('<div class="icon col s12"><span class="circle"><i class="material-icons icon-share">all_inclusive</i></span></div><div class="col s12 text"><p>' + obj.title +' <br> <span class="truncate">Chart</span></p></div>');
+    const divDesc = $('<div class="div-desc"><p class="chart-title negrita">'+ obj.title +'<br><span class="chart-desc">'+ obj.description +'</span></p></div>');
 
+    // divImg.append(divImgDetail);
     container.append(divImg);
     container.append(divDesc);
     parent.append(container);
+
+    divImg.css({ "background-image": 'url(assets/img/' + obj.img + ')' });
+    
 
     return parent
 }

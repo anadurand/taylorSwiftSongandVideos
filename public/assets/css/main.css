@@ -78,6 +78,9 @@ body {
   .header .chart .description {
     font-size: 12px; }
 
+.collection-item:hover {
+  background-color: #F4F4F4; }
+
 .section {
   padding-top: 3rem; }
   .section .body .loader {
@@ -100,3 +103,41 @@ body {
   color: white;
   border-radius: 25px;
   padding: 3px; }
+
+.list-content {
+  max-height: 900px;
+  overflow-y: scroll; }
+
+.other-chart h5 {
+  font-weight: bolder;
+  color: #037EE9;
+  margin-top: 6rem;
+  padding: 0 15px; }
+
+.other-chart .detail-chart .img-div {
+  min-height: 100px;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .other-chart .detail-chart .img-div:nth-child(2) {
+    background-size: 200%; }
+
+.other-chart .detail-chart .div-desc .chart-title {
+  color: #037EE9; }
+
+.other-chart .detail-chart .div-desc .chart-desc {
+  color: #7A7A7A; }
+
+.collection .collection-item.avatar {
+  padding-left: 95px; }
+
+.collection .collection-item.avatar:not(.circle-clipper) > .circle {
+  left: 40px; }
+
+.count {
+  position: absolute;
+  left: 15px;
+  top: 20px; }
+
+.circle {
+  border-radius: 0; }

@@ -2,7 +2,7 @@
 
 const SongsList = (updated) => {
 
-    const parent = $('<div class=""></div>');
+    const parent = $('<div class="list-content"></div>');
     const ul = $('<ul class="collection"></ul>');
 
     parent.append(ul);
@@ -19,14 +19,19 @@ const SongsList = (updated) => {
                         }, []);
     console.log(uniqueSongs);
     uniqueSongs.forEach( (song, i) => {
-        ul.append(detailSong(song, i+1));
+        if(i+1<10){
+            i = "0" + (i+1);
+        }else if(i+1==10){
+            i=i+1;
+        }
+        ul.append(detailSong(song, i));
     });
 
     return parent;
 }
 
 const detailSong = (song, i) => {
-    const li = $('<li class="collection-item avatar"><span class= "negrita count">'+ i +'</span></li>');
+    const li = $('<li class="collection-item avatar"><div class= "negrita count">'+ i +'</div></li>');
     const img = $('<img src="'+song.artworkUrl30+'" alt="" class="circle">');
     const title = $('<span class="title trucate negrita">'+song.trackName+'</span>');
     const collection = $('<p class="truncate">'+song.collectionName+'</p>');
