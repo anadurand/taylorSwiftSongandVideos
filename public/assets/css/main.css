@@ -114,19 +114,19 @@ body {
   margin-top: 6rem;
   padding: 0 15px; }
 
-.other-chart .detail-chart .img-div {
-  min-height: 100px;
-  width: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat; }
-  .other-chart .detail-chart .img-div:nth-child(2) {
-    background-size: 200%; }
-
-.other-chart .detail-chart .div-desc .chart-title {
-  color: #037EE9; }
-
-.other-chart .detail-chart .div-desc .chart-desc {
-  color: #7A7A7A; }
+.other-chart .detail-chart {
+  height: 220px; }
+  .other-chart .detail-chart .img-div {
+    min-height: 100px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    .other-chart .detail-chart .img-div:nth-child(2) {
+      background-size: 200%; }
+  .other-chart .detail-chart .div-desc .chart-title {
+    color: #037EE9; }
+  .other-chart .detail-chart .div-desc .chart-desc {
+    color: #7A7A7A; }
 
 .collection .collection-item.avatar {
   padding-left: 95px; }

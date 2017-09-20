@@ -21,7 +21,7 @@ const OtherChart = () => {
 }
 
 const DetailChart = (obj) => {
-    const parent = $('<div class="col s12 l6"></div>');
+    const parent = $('<div class="col s12 m6"></div>');
     const container = $('<div class = "detail-chart"></div>');
     const divImg = $('<div class="img-div"></div>');
     const divImgDetail = $('<div class="icon col s12"><span class="circle"><i class="material-icons icon-share">all_inclusive</i></span></div><div class="col s12 text"><p>' + obj.title +' <br> <span class="truncate">Chart</span></p></div>');
