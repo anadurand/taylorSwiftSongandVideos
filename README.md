@@ -1,4 +1,4 @@
-# taylorSwiftSongsandVideos
+# Taylor Swift Songs and Videos
 Crowdbotics Frontend Engineering Challenge
 
 #### Trial Project
@@ -14,6 +14,7 @@ https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-serv
 
 - The designer has presented you with the following mockup.
 
+    ![mockup](src/assets/img/mockup.PNG "Mockup")
 
 - The client has given you the following instructions:
 
@@ -42,3 +43,17 @@ https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-serv
 
     4) Answer the question: is there anything else that is needed before this can be deployed to production?
 
+#### Solution
+
+    Plan to implement this design:
+
+    - Created a repository.
+    - Created the server.js and program an automated task running tool.
+    - Created a simple layout.
+    - Integrate the API.
+    - Start to code.
+    - Give the style needed.
+    
+    Is there anything else that is needed before this can be deployed to production?
+
+    - I need to Choose an environment for hosting the Express app, it will be Heroku.
