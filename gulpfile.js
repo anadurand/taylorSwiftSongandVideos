@@ -8,7 +8,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 
-var nodemon     = require('gulp-nodemon');
+// var nodemon     = require('gulp-nodemon');
 
 var config = {
     source:'./src/',

@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.negrita {
+  font-weight: bold; }
+
+.count {
+  padding-right: 4px;
+  color: #AFAFAF; }
+
+.searchBarr {
+  padding-top: 20px; }
+  .searchBarr-row {
+    margin-bottom: 10px; }
+
+.nav-search {
+  padding: 5px 0;
+  background-color: #F4F4F4;
+  height: 30px; }
+  .nav-search input[type=text]:not(.browser-default) {
+    border: none;
+    width: 80%;
+    max-height: 20px;
+    padding-left: 5px; }
+  .nav-search input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border: none;
+    box-shadow: none; }
+  .nav-search_input {
+    display: inline-block; }
+  .nav-search .icon-search {
+    color: #2C9BFC; }
+
+.logIn a {
+  color: black; }
+
+.header {
+  background-color: #6C56CD;
+  padding: 2px;
+  min-height: 90px;
+  color: white; }
+  .header .place .square-lightblue {
+    background-color: #47D3CF;
+    width: 120px;
+    height: 125px;
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .header .place .icon {
+    padding-top: 10px; }
+    .header .place .icon span {
+      display: inline-block;
+      background-color: #6C56CD;
+      border-radius: 25px;
+      padding: 3px; }
+    .header .place .icon-share {
+      color: white;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .header .place .text p {
+    margin: 0;
+    color: #6C56CD;
+    font-weight: bold; }
+    .header .place .text p span {
+      color: white;
+      font-size: 1.4rem; }
+  .header .row {
+    margin-bottom: 0; }
+  .header .chart .title {
+    font-weight: bold; }
+  .header .chart .description {
+    font-size: 12px; }
+
+.section {
+  padding-top: 3rem; }
+  .section .body .loader {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .section .other-chart {
+    background-color: #F9F9F9; }
+
+.id {
+  color: #AFAFAF; }
+  .id-number {
+    padding-left: 3px; }
+
+.icon-id {
+  display: inline-block;
+  background-color: #AFAFAF;
+  font-size: 12px;
+  color: white;
+  border-radius: 25px;
+  padding: 3px; }
