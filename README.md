@@ -16,20 +16,21 @@ https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-serv
 
 
 - The client has given you the following instructions:
-    a) the list should display up to 200 Taylor Swift songs read from the API. 
-    b) The list should include the trackName, collectionName, and trackId from the API.
-    c) the list should contain no duplicate songs. If two or more songs have exactly the same title, only one should be shown.
-    d) the list should be scrollable.
-    e) the list should display an image from the API associated with the song.
-    f) the page should load fast.
+
+    - the list should display up to 200 Taylor Swift songs read from the API. 
+    - The list should include the trackName, collectionName, and trackId from the API.
+    - the list should contain no duplicate songs. If two or more songs have exactly the same title, only one should be   shown.
+    - the list should be scrollable.
+    - the list should display an image from the API associated with the song.
+    - the page should load fast.
 
 
 
 - The designer asks you to implement four features:
-    a) each song in the list should change color to gray on mouseover
-    b) the list of songs section should scroll vertically to allow the user to see the entire list.
-    c) the title bar at top should stay in place and be visible on the screen even when the list scrolls.
-    d) the section at right (“other charts”) should not scroll. This content should be displayed as written.
+    - each song in the list should change color to gray on mouseover
+    - the list of songs section should scroll vertically to allow the user to see the entire list.
+    - the title bar at top should stay in place and be visible on the screen even when the list scrolls.
+    - the section at right (“other charts”) should not scroll. This content should be displayed as written.
 
 
 #### Instructions
